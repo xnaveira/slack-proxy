@@ -22,6 +22,10 @@ var log = logrus.New()
 func main() {
 
 	url = os.Getenv("WEBHOOK_URL")
+	if url == "" {
+		fmt.Println("You need to set the WEBHOOK_URL enviroment variable.")
+		os.Exit(2)
+	}
 	fmt.Println("URL:>", url)
 
 	http.HandleFunc("/message", messageHandler)
