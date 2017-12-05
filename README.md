@@ -1,6 +1,6 @@
 # Slack proxy
 
-###Proxy messages to a Slack Incoming WEBHOOK_URL
+### Proxy messages to a Slack Incoming WEBHOOK_URL
 
 Make sure that you create a webhook in slack and get the url.
 
