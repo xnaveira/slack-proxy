@@ -8,4 +8,4 @@ WORKDIR ${appdir}
 RUN dep ensure
 RUN go build -o main .
 EXPOSE 8080
-CMD ["/app/main"]
+CMD ["/go/src/github.com/xnaveira/slack-proxy/main"]
